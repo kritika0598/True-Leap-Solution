@@ -1143,13 +1143,13 @@ input::-moz-focus-inner {
 header {
 	height: 72px;
 	width: 100%;
-	position: fixed;
+	position:fixed;
 	left: 0;
 	top: 0;
 	z-index: 990;
 	text-align: center;
 	background: #12151B;
-	background: rgba(18, 21, 27, 0.5);
+	background: black;
 	-moz-transition: background 0.5s ease-in-out;
 	-o-transition: background 0.5s ease-in-out;
 	-webkit-transition: background 0.5s ease-in-out;
@@ -1161,11 +1161,11 @@ header .logo {
 	vertical-align: middle;
 	margin: 0;
 	padding: 0;
-	margin-right: 15px;
+	margin-right: 5px;
 
 	/* add position relative since z-index only applies to
 	elements that have been given an explicit position */
-	position: relative;
+	position: fixed;
 	z-index: 992;
 }
 header .logo a {
@@ -1181,7 +1181,7 @@ header .logo a {
 	height: 20px;
 	background-repeat: no-repeat;
 	background-position: 5 0;
-	background-image: url("../images/logo1.png");
+	background-image: url("../images/30e6416a-597a-4b88-8312-ef83c8b18d06.png");
 }
 @media (-webkit-min-device-pixel-ratio:2), (min-resolution:192dpi) {
 	header .logo a {
@@ -1243,12 +1243,18 @@ ul#nav li a {
 }
 ul#nav li a:hover {
 	color: white;
+    background-color:  #ed254d;
 }
 ul#nav li a:active {
-	background-color: transparent !important;
+	background-color: #ed254d;
 }
+/*ul#nav li a:current {
+	background: #ed254d;
+	color:dimgray;
+}*/
+
 ul#nav li.current a {
-	background: #f26522;
+	background: #ed254d;
 	color: white;
 }
 
@@ -1436,7 +1442,8 @@ ul#nav li.current a {
  * ------------------------------------------------------------------- */
 #features {
 	padding: 15rem 0 12rem;
-	background-color: darksalmon;
+	background-color: #903010;
+    background-image: url(../images/images.jpg);
 	overflow: hidden;
 }
 
@@ -1510,7 +1517,7 @@ ul#nav li.current a {
 	position: absolute;
 	left: 50%;
 	top: 0;
-	background: rgba(63, 80, 96, 0.15);
+	background: rgba(81, 63, 96, 0.46);
 }
 
 .info-entry .info-entry-content {
@@ -1707,7 +1714,7 @@ ul#nav li.current a {
  *
  * ------------------------------------------------------------------- */
 #stats {
-	background: #001835;
+	background: #21082c;
 	padding-top: 7.2rem;
 	padding-bottom: 4.8rem;
 	text-align: center;
@@ -1732,7 +1739,7 @@ ul#nav li.current a {
 	display: block;
 	width: 80px;
 	height: 1px;
-	background: rgba(249, 218, 79, 0.5);
+	background: #e83c5f;
 	position: absolute;
 	bottom: 0;
 	left: 50%;
@@ -1745,7 +1752,7 @@ ul#nav li.current a {
 }
 
 #stats .stat-count {
-	color: #FFFFFF;
+	color:#FFFF;
 	font-size: 3.6rem;
 	margin-top: 1.2rem;
 	margin-bottom: 0;
@@ -2136,7 +2143,7 @@ ul#nav li.current a {
  * ------------------------------------------------------------------- */
 #contact {
   background-color: #111111;
-  background-image: url(../images/contact-bg.jpg);
+  background-image: url(../images/contact111.jpg);
   background-repeat: no-repeat;
   background-position: center;
   -webkit-background-size: cover;
@@ -2823,21 +2830,32 @@ footer a:active {
 /* =================================================================== */
 
 #about {
-	background: white;
-	padding-top: 120px;
-	padding-bottom: 0;
+	
+	position: relative;
+	background-image: url(../images/luxfon.com-8341.jpg);
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-position: center top;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	background-size: cover;
+	text-align: center;
+	padding-top: 15.6rem;
+	overflow: hidden;
+
 }
 #about .about-content {
-	max-width: 934px;
+	max-width: 1000px;
 }
 #about h3 {
 	font: 16px/36px "raleway-heavy", sans-serif;
 	text-transform: none;
 	padding: 0;
 	margin-bottom: 0;
+    color:#18032f;
 }
 #about p {
-	color: #707273;
+	color: #154a64;
 }
 #about .left {
 	padding-right: 30px;
@@ -2846,3 +2864,40 @@ footer a:active {
 	padding-left: 30px;
 }
 
+/*==================================================================== */
+/*o. Journal Section
+/* =================================================================== */
+#journal {
+	background: #a43b0a url(../images/blog-bg.jpg) no-repeat bottom center fixed;
+	-webkit-background-size: cover !important;
+	-moz-background-size: cover !important;
+	background-size: cover !important;
+	padding-top: 120px;
+	padding-bottom: 108px;
+	width: 100%;
+}
+#journal h1, #journal h3, #journal h3 a {
+	color: white;
+}
+#journal h3 {
+	font: 16px/27px "raleway-heavy", sans-serif;
+	padding: 0;
+	margin: 0;
+}
+#journal h5 {
+	font-size: 13px;
+	color: #f26522;
+	margin: 0;
+}
+#journal p {
+	color: #fffcfb;
+}
+#journal #blog-wrapper {
+	margin: 24px 0 0 0;
+}
+#journal #blog-wrapper .bgrid {
+	padding: 0 18px;
+}
+#journal #blog-wrapper article {
+	margin-bottom: 24px;
+}
